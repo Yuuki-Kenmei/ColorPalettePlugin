@@ -129,7 +129,7 @@ class ColorPalette: ConstraintLayout {
     }
 
     private fun initializeView() {
-        this.background = resources.getDrawable(R.drawable.border_rectangle, null)
+        this.background = resources.getDrawable(R.drawable.color_palette_border_rectangle, null)
 
         //region 旧色と新色
         val nowTextView = TextView(context)
@@ -142,7 +142,7 @@ class ColorPalette: ConstraintLayout {
 
         val constraintLayout1 = ConstraintLayout(context)
         constraintLayout1.id = View.generateViewId()
-        constraintLayout1.background = resources.getDrawable(R.drawable.border_rectangle2, null)
+        constraintLayout1.background = resources.getDrawable(R.drawable.color_palette_border_rectangle2, null)
         this.addView(constraintLayout1)
 
         mOldColorView.id = View.generateViewId()
@@ -150,7 +150,7 @@ class ColorPalette: ConstraintLayout {
 
         val constraintLayout2 = ConstraintLayout(context)
         constraintLayout2.id = View.generateViewId()
-        constraintLayout2.background = resources.getDrawable(R.drawable.border_rectangle2, null)
+        constraintLayout2.background = resources.getDrawable(R.drawable.color_palette_border_rectangle2, null)
         this.addView(constraintLayout2)
 
         mNewColorView.id = View.generateViewId()
